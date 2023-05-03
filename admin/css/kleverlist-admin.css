@@ -1,0 +1,388 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* .settings-input-section {
+    display: none;
+} */
+.settings-input-section.hide_setting_input{
+    display: none;
+}
+
+.settings-input-section input{
+    min-width: 250px;
+}
+
+tr.settings-input-section td {
+    width:33%;
+}
+.kleverlist-response,.kleverlist-response-brands,.kleverlist-gloabal-response{
+    font-family:inherit;
+    font-size:14px;
+    font-weight: 600;
+}
+.kleverlist-response.error,.kleverlist-gloabal-response.error {
+    color: red;
+}
+.kleverlist-response.success,.kleverlist-gloabal-response.success {
+    color: green;
+}
+
+.kleverlist-response-brands.error{
+    color: red;
+}
+
+.kleverlist-response-brands.success {
+    color: green;
+}
+
+span.labelauty-checked-image {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+input.kleverlist-checkbox{
+    visibility: hidden;
+}
+.kleverlist-mapping-section{
+    display: flex;
+    width: 100%;
+}
+.kleverlist-mapping-left{
+    width: 50%;
+    float: left;
+}
+.kleverlist-mapping-right{
+    width: 50%;
+    float: left;
+}
+.kleverlist-setting-page .kleverlist-postbox{
+    padding: 15px 69px 16px 13px;
+    margin: 10px 0 10px 0;
+    width: 93%;
+}
+
+.active_sendy_checkbox input[type=checkbox]:checked ~ .sendy_product_list_field {
+    display: block !important;
+}
+
+input#kleverlist_remove_settings {
+    background: red;
+    color: white;
+    border-color: red;
+}
+
+
+
+/* Css Changed On 10-april- 2023 */
+form#kleverlist_settings tr:first-child th {  
+    min-width: 272px;
+}
+form#kleverlist_settings table  tbody.settings-input-section.show_setting_input label {
+    font-family: inherit;
+    font-weight: 700;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input input {
+    padding: 7px 18px;
+    border-color: white;
+    border-radius: 6px;
+    outline: none;
+}
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input p.submit input#submit {
+    width: max-content;
+    min-width: 170px;
+    border-color: transparent;
+}
+
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input  td {
+    position: relative;
+}
+
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input  p {
+    position: absolute;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+
+form#kleverlist_settings p.submit input#kleverlist_remove_settings {
+    min-width: 170px;
+    height: 44px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: 600;
+}
+
+form#kleverlist_brands_settings select#sendy_brands {
+    padding: 8px 18px;
+    min-width: 220px;
+    border: none;
+    margin-left: 10px;
+    font-family: inherit;
+    outline: 0;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+form#kleverlist_brands_settings label {
+    font-family: inherit;
+}
+
+form#kleverlist_brands_settings p.submit input#generate_lists {
+    min-width: 170px;
+    border-radius: 6px;
+    height: 44px;
+    font-weight: 600;
+ 
+}
+
+form#kleverlist_settings p.submit input#kleverlist_remove_settings:hover{background-color: #d70000;border: none;}
+
+form#kleverlist_brands_settings {
+    margin-left: 9px;
+}
+/* Mapping page */
+table.form-table.kleverlist-choose-lists select#global_list,table.form-table.kleverlist-choose-integration select#mapping_integration_type {
+    padding: 8px 18px;
+    min-width: 220px;
+    border: none;
+    margin-left: 10px;
+    font-family: inherit;
+    outline: 0;
+    border-radius: 6px;
+    font-weight: 600;
+}
+table.form-table.kleverlist-choose-integration select#mapping_integration_type{
+    margin-left: 0px !important;
+}
+
+table.form-table.kleverlist-choose-lists th {
+    font-weight: 600;
+    font-family: inherit;
+}
+
+table.form-table.kleverlist-choose-lists p {
+    font-family: inherit;
+    padding-left: 10px;
+}
+
+
+
+table.form-table.kleverlist-choose-integration td {
+    margin-left: 10px;
+    display: block;
+}
+
+p.kleverlist-data {
+    font-family: inherit;
+    font-weight: 400;
+}
+
+form#kleverlist_mapping_settings table.form-table.width-900 td label.radio-inline {
+    margin-right: 10px;
+}
+
+table.form-table.width-900 p.submit input#mapping_settings_save, input#global_settings {
+    min-width: 170px;
+    height: 44px;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: 600;
+}
+
+div#kleverlist_mapping_settings_content table.form-table.width-900 td {
+    padding-left: 20px;
+}
+/* Css Changed On 10-april- 2023  close */
+#loader, #brand_loader {
+  position: unset;
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.kleverlist-loader-outer-div {
+    width: 50px;
+    height: 50px;
+    margin-top:0px;
+    margin-left: 40px;
+}
+
+td.kleverlist-position {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+td.kleverlist-position p.submit {
+    position: unset !important;
+}
+
+/* Mapping Checkbox Toggle Design Code Start */
+.kleverlist-switch {
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    width: 55px;
+}
+
+.kleverlist-switch input {
+    display:none;
+}
+  
+.kleverlist-slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+  
+.kleverlist-slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 22px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 22px;
+}
+
+input.kleverlist-mapping-checkbox:checked + .kleverlist-slider {
+    background-color: #66bb6a;
+}
+
+input.kleverlist-mapping-checkbox:checked + .kleverlist-slider:before {
+    transform: translateX(26px);
+}
+
+input.kleverlist-global-checkbox:checked + .kleverlist-slider {
+    background-color: #66bb6a;
+}
+
+input.kleverlist-global-checkbox:checked + .kleverlist-slider:before {
+    transform: translateX(26px);
+}
+
+.kleverlist-slider.kleverlist-round {
+    border-radius: 34px;
+}
+
+.kleverlist-slider.kleverlist-round:before {
+    border-radius: 50%;
+}
+/* general styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.kleverlist-container {
+    margin: 0 auto;
+}
+/* Mapping Checkbox Toggle Design Code End */
+
+/* Custom Suggestion tooltip */
+.kleverlist-tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px black;
+    margin: 0 0 0 70px;
+    bottom: 14px;
+    font-weight: bold;
+}
+
+div#kleverlist_mapping_settings_content table.form-table.width-900 td {
+    position: relative;
+}
+
+.kleverlist-tooltip .kleverlist-tooltiptext {
+    font-size: 12px;
+    background-color: #333;
+    color: #ffffff;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 400px;
+    font-weight: 500;
+    font-family: inherit;
+    /* text-transform: capitalize; */
+    line-height: 26px;
+    padding: 10px;
+    border-radius:10px;
+    transition: 0.2s;
+    display: none;
+    transform: translate(-50%, -75%);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 1;
+    cursor: pointer;
+}
+
+span.kleverlist-tooltiptext:before {
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-color: #333 transparent transparent;
+    border-style: solid;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    opacity: 1;
+    
+}
+.kleverlist-tooltip:hover .kleverlist-tooltiptext {
+    display: block;
+}
+.kleverlist-tooltip.kleverlist-tooltip-box img {
+    width: 20px;
+    cursor: pointer;
+}
+.kleverlist-tooltip.kleverlist-tooltip-box img:hover + span.kleverlist-tooltiptext {opacity:1;}
+/* Custom Suggestion tooltip */
+
+/* Mapping Sendy Field Hide / Show */
+.kleverlist-sendy-integration-section.hide-block{
+    display: none;
+}
+.kleverlist-sendy-integration-section.show-block{
+    display: block;
+}
+/* Mapping Sendy Field Hide / Show */
+
+/* Dev CSS Start */
+.kleverlist-integrations {
+    width: 16%;
+    border: 1px solid black;
+    padding: 4px;
+}
+/* Dev CSS End */
