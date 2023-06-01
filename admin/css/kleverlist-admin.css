@@ -2,33 +2,38 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
-/* .settings-input-section {
-    display: none;
-} */
-.settings-input-section.hide_setting_input{
+
+.settings-input-section.hide_setting_input {
     display: none;
 }
 
-.settings-input-section input{
+.settings-input-section input {
     min-width: 250px;
 }
 
 tr.settings-input-section td {
-    width:33%;
+    width: 33%;
 }
-.kleverlist-response,.kleverlist-response-brands,.kleverlist-gloabal-response{
-    font-family:inherit;
-    font-size:14px;
+
+.kleverlist-response,
+.kleverlist-response-brands,
+.kleverlist-gloabal-response {
+    font-family: inherit;
+    font-size: 14px;
     font-weight: 600;
 }
-.kleverlist-response.error,.kleverlist-gloabal-response.error {
+
+.kleverlist-response.error,
+.kleverlist-gloabal-response.error {
     color: red;
 }
-.kleverlist-response.success,.kleverlist-gloabal-response.success {
+
+.kleverlist-response.success,
+.kleverlist-gloabal-response.success {
     color: green;
 }
 
-.kleverlist-response-brands.error{
+.kleverlist-response-brands.error {
     color: red;
 }
 
@@ -46,28 +51,32 @@ span.labelauty-checked-image {
     background-size: contain;
 }
 
-input.kleverlist-checkbox{
+input.kleverlist-checkbox {
     visibility: hidden;
 }
-.kleverlist-mapping-section{
+
+.kleverlist-mapping-section {
     display: flex;
     width: 100%;
 }
-.kleverlist-mapping-left{
+
+.kleverlist-mapping-left {
     width: 50%;
     float: left;
 }
-.kleverlist-mapping-right{
+
+.kleverlist-mapping-right {
     width: 50%;
     float: left;
 }
-.kleverlist-setting-page .kleverlist-postbox{
+
+.kleverlist-setting-page .kleverlist-postbox {
     padding: 15px 69px 16px 13px;
     margin: 10px 0 10px 0;
     width: 93%;
 }
 
-.active_sendy_checkbox input[type=checkbox]:checked ~ .sendy_product_list_field {
+.active_sendy_checkbox input[type=checkbox]:checked~.sendy_product_list_field {
     display: block !important;
 }
 
@@ -77,13 +86,11 @@ input#kleverlist_remove_settings {
     border-color: red;
 }
 
-
-
-/* Css Changed On 10-april- 2023 */
-form#kleverlist_settings tr:first-child th {  
+form#kleverlist_settings tr:first-child th {
     min-width: 272px;
 }
-form#kleverlist_settings table  tbody.settings-input-section.show_setting_input label {
+
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input label {
     font-family: inherit;
     font-weight: 700;
     margin-bottom: 7px;
@@ -96,23 +103,23 @@ form#kleverlist_settings table tbody.settings-input-section.show_setting_input i
     border-radius: 6px;
     outline: none;
 }
+
 form#kleverlist_settings table tbody.settings-input-section.show_setting_input p.submit input#submit {
     width: max-content;
     min-width: 170px;
     border-color: transparent;
 }
 
-form#kleverlist_settings table tbody.settings-input-section.show_setting_input  td {
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input td {
     position: relative;
 }
 
-form#kleverlist_settings table tbody.settings-input-section.show_setting_input  p {
-    position: absolute;
+form#kleverlist_settings table tbody.settings-input-section.show_setting_input p {
+    position: relative;
     font-family: inherit;
     font-size: inherit;
     font-weight: 600;
 }
-
 
 form#kleverlist_settings p.submit input#kleverlist_remove_settings {
     min-width: 170px;
@@ -144,16 +151,22 @@ form#kleverlist_brands_settings p.submit input#generate_lists {
     border-radius: 6px;
     height: 44px;
     font-weight: 600;
- 
 }
 
-form#kleverlist_settings p.submit input#kleverlist_remove_settings:hover{background-color: #d70000;border: none;}
+form#kleverlist_settings p.submit input#kleverlist_remove_settings:hover {
+    background-color: #d70000;
+    border: none;
+}
 
 form#kleverlist_brands_settings {
     margin-left: 9px;
 }
+
+
 /* Mapping page */
-table.form-table.kleverlist-choose-lists select#global_list,table.form-table.kleverlist-choose-integration select#mapping_integration_type {
+
+table.form-table.kleverlist-choose-lists select#global_list,
+table.form-table.kleverlist-choose-integration select#mapping_integration_type {
     padding: 8px 18px;
     min-width: 220px;
     border: none;
@@ -163,7 +176,8 @@ table.form-table.kleverlist-choose-lists select#global_list,table.form-table.kle
     border-radius: 6px;
     font-weight: 600;
 }
-table.form-table.kleverlist-choose-integration select#mapping_integration_type{
+
+table.form-table.kleverlist-choose-integration select#mapping_integration_type {
     margin-left: 0px !important;
 }
 
@@ -176,8 +190,6 @@ table.form-table.kleverlist-choose-lists p {
     font-family: inherit;
     padding-left: 10px;
 }
-
-
 
 table.form-table.kleverlist-choose-integration td {
     margin-left: 10px;
@@ -193,7 +205,8 @@ form#kleverlist_mapping_settings table.form-table.width-900 td label.radio-inlin
     margin-right: 10px;
 }
 
-table.form-table.width-900 p.submit input#mapping_settings_save, input#global_settings {
+table.form-table.width-900 p.submit input#mapping_settings_save,
+input#global_settings {
     min-width: 170px;
     height: 44px;
     font-family: inherit;
@@ -206,31 +219,39 @@ table.form-table.width-900 p.submit input#mapping_settings_save, input#global_se
 div#kleverlist_mapping_settings_content table.form-table.width-900 td {
     padding-left: 20px;
 }
-/* Css Changed On 10-april- 2023  close */
-#loader, #brand_loader {
-  position: unset;
-  width: 40px;
-  height: 40px;
-  border: 3px solid rgba(0, 0, 0, 0.3);
-  border-top-color: #333;
-  border-radius: 50%;
-  animation: spin 1s ease-in-out infinite;
+
+#loader,
+#global_loader, 
+#brand_loader {
+    position: unset;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+
+#global_loader{
+    width: 30px;
+    height: 30px;    
+    margin: 0 0 8px 10px;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .kleverlist-loader-outer-div {
     width: 50px;
     height: 50px;
-    margin-top:0px;
+    margin-top: 0px;
     margin-left: 40px;
 }
 
@@ -238,13 +259,15 @@ td.kleverlist-position {
     position: relative;
     display: flex;
     align-items: center;
-    
 }
+
 td.kleverlist-position p.submit {
     position: unset !important;
 }
 
+
 /* Mapping Checkbox Toggle Design Code Start */
+
 .kleverlist-switch {
     display: inline-block;
     height: 30px;
@@ -253,9 +276,9 @@ td.kleverlist-position p.submit {
 }
 
 .kleverlist-switch input {
-    display:none;
+    display: none;
 }
-  
+
 .kleverlist-slider {
     background-color: #ccc;
     bottom: 0;
@@ -266,7 +289,7 @@ td.kleverlist-position p.submit {
     top: 0;
     transition: .4s;
 }
-  
+
 .kleverlist-slider:before {
     background-color: #fff;
     bottom: 4px;
@@ -278,19 +301,19 @@ td.kleverlist-position p.submit {
     width: 22px;
 }
 
-input.kleverlist-mapping-checkbox:checked + .kleverlist-slider {
+input.kleverlist-mapping-checkbox:checked+.kleverlist-slider {
     background-color: #66bb6a;
 }
 
-input.kleverlist-mapping-checkbox:checked + .kleverlist-slider:before {
+input.kleverlist-mapping-checkbox:checked+.kleverlist-slider:before {
     transform: translateX(26px);
 }
 
-input.kleverlist-global-checkbox:checked + .kleverlist-slider {
+input.kleverlist-global-checkbox:checked+.kleverlist-slider {
     background-color: #66bb6a;
 }
 
-input.kleverlist-global-checkbox:checked + .kleverlist-slider:before {
+input.kleverlist-global-checkbox:checked+.kleverlist-slider:before {
     transform: translateX(26px);
 }
 
@@ -301,8 +324,12 @@ input.kleverlist-global-checkbox:checked + .kleverlist-slider:before {
 .kleverlist-slider.kleverlist-round:before {
     border-radius: 50%;
 }
+
+
 /* general styling */
-html, body {
+
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -310,15 +337,19 @@ html, body {
 .kleverlist-container {
     margin: 0 auto;
 }
+
+
 /* Mapping Checkbox Toggle Design Code End */
 
+
 /* Custom Suggestion tooltip */
+
 .kleverlist-tooltip {
     position: absolute;
     display: inline-block;
     border-bottom: 1px black;
     margin: 0 0 0 70px;
-    bottom: 14px;
+    bottom: 22px;
     font-weight: bold;
 }
 
@@ -332,14 +363,13 @@ div#kleverlist_mapping_settings_content table.form-table.width-900 td {
     color: #ffffff;
     position: absolute;
     top: -40px;
-    left: 50%;
+    left: 62%;
     width: 400px;
     font-weight: 500;
     font-family: inherit;
-    /* text-transform: capitalize; */
     line-height: 26px;
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
     transition: 0.2s;
     display: none;
     transform: translate(-50%, -75%);
@@ -358,31 +388,681 @@ span.kleverlist-tooltiptext:before {
     bottom: -20px;
     transform: translateX(-50%);
     opacity: 1;
-    
 }
+
 .kleverlist-tooltip:hover .kleverlist-tooltiptext {
     display: block;
 }
+
 .kleverlist-tooltip.kleverlist-tooltip-box img {
     width: 20px;
     cursor: pointer;
 }
-.kleverlist-tooltip.kleverlist-tooltip-box img:hover + span.kleverlist-tooltiptext {opacity:1;}
+
+.kleverlist-tooltip.kleverlist-tooltip-box img:hover+span.kleverlist-tooltiptext {
+    opacity: 1;
+}
+
+
 /* Custom Suggestion tooltip */
 
-/* Mapping Sendy Field Hide / Show */
-.kleverlist-sendy-integration-section.hide-block{
-    display: none;
-}
-.kleverlist-sendy-integration-section.show-block{
-    display: block;
-}
+
 /* Mapping Sendy Field Hide / Show */
 
+.kleverlist-sendy-integration-section.hide-block {
+    display: none;
+}
+
+.kleverlist-sendy-integration-section.show-block {
+    display: block;
+}
+
+
+/* Mapping Sendy Field Hide / Show */
+
+
 /* Dev CSS Start */
+
 .kleverlist-integrations {
     width: 16%;
     border: 1px solid black;
     padding: 4px;
 }
+
+
 /* Dev CSS End */
+
+
+/* newly css designed on 24/4/2023 */
+
+table.form-table.width-900.klever-list-data-outer-div {
+    width: 50%;
+    background: #ffffffde;
+    border-radius: 10px;
+    padding: 11px;
+    display: grid;
+    margin: auto;
+    margin-top: 6em !important;
+    -webkit-box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+    -moz-box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+    box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+}
+
+form#kleverlist_settings {
+    height: 100%;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td {
+    width: 100%;
+    display: inline;
+}
+
+tbody.settings-input-section.show_setting_input {
+    width: 100% !important;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td input {
+    width: 96%;
+    background: #f0f0f1;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr {
+    display: grid;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td p.klever-list-data-paragraph {
+    margin-bottom: 0px;
+    display: block;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td.klever-list-data-td {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td.kleverlist-position {
+    padding-top: 0;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td.kleverlist-position p.submit {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input tr td.kleverlist-position p.submit input#settings_submit_button {
+    background: #2271b1;
+}
+
+td.kleverlist-position .kleverlist-loader-outer-div {
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    bottom: -49px;
+    padding: 2px;
+    width: 99.7%;
+    left: 0;
+    margin-left: -12px;
+    border-bottom-left-radius: 8px;
+}
+
+td.kleverlist-position .kleverlist-loader-outer-div div#loader {
+    margin-left: 48%;
+    background: #fff;
+}
+
+th.klever-list-data-heading em {
+    padding-left: 10px;
+}
+
+table.form-table.width-900.klever-list-data-outer-div div#remote-storage-container label span.labelauty-checked {
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* Remove brand div  */
+
+.klever-list-data-brandselect-main {
+    width: 50%;
+    margin: auto;
+    background: #ffffffde;
+    border-radius: 10px;
+    margin-top: 2em;
+    -webkit-box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+    -moz-box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+    box-shadow: 3px 2px 19px 0px rgba(227, 227, 227, 1);
+}
+
+.klever-list-data-brandselect-main .klever-list-data-removebtn td.kleverlist-position {
+    padding: 0 18px;
+}
+
+.klever-list-data-brandselect-main .klever-list-data-removebtn td.kleverlist-position p.submit {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.klever-list-data-brandselect-main .klever-list-data-removebtn td.kleverlist-position input#kleverlist_remove_settings {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.klever-list-data-brandselect-main .klever-list-data-removebtn td.kleverlist-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.klever-list-data-brandselect-main .klever-list-data-removebtn td.kleverlist-position div#loader {
+    margin: 2em 0 -10px;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings {
+    margin-left: 17px;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings table {
+    width: 100%;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings select#sendy_brands {
+    width: 100%;
+    background-color: #f0f0f1;
+}
+
+td.klever-list-data-dropdown {
+    margin-top: 2em;
+    display: block;
+    margin-left: 8px;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings td.kleverlist-position {
+    width: 100%;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings td.kleverlist-position input {
+    width: 100%;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings td.kleverlist-position p.submit {
+    width: 97%;
+    padding-bottom: 0;
+}
+
+.klever-list-data-brandselect-main form#kleverlist_brands_settings td.kleverlist-position input:hover {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: white;
+}
+
+@keyframes scale-display {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes scale-display--reversed {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    99% {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.show_setting_input {
+    animation: scale-display 0.3s;
+}
+
+table.form-table.width-900.klever-list-data-outer-div tbody.settings-input-section.hide_setting_input {
+    animation: scale-display--reversed 0.3s;
+    animation-fill-mode: forwards;
+}
+
+p.kleverlist-response.verfied-klever-center,
+p.kleverlist-response-brands.klever-list-data-generate-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+}
+
+p.kleverlist-response-brands.klever-list-data-generate-text {
+    position: absolute;
+    width: 100%;
+}
+
+.klever-list-data-brandselect-main {
+    position: relative;
+}
+
+td.kleverlist-position.klever-list-data-mainchanges div#loader {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: -10px;
+}
+
+td.kleverlist-position.klever-list-data-generate {
+    flex-direction: column;
+}
+
+td.kleverlist-position.klever-list-data-generate div#brand_loader {
+    margin-bottom: 2em;
+}
+
+td.kleverlist-position.klever-list-data-generate p.submit {
+    margin-left: -18px;
+}
+
+table.form-table.width-900.klever-list-data-removebtn td.kleverlist-position p.submit {
+    margin-top: 10px;
+}
+
+.kleverlist-integrations.sendy.klever-width-btn {
+    width: auto;
+    text-align: center;
+    display: flex;
+    padding: 8px;
+    border-radius: 9px;
+    background: #f0f0f1;
+    border: 0;
+}
+
+.kleverlist-integrations.sendy.klever-width-btn label {
+    margin-left: -20px;
+}
+
+td.klever-list-btn-padd {
+    padding: 0;
+}
+
+td.kleverlist-position.klever-list-data-mainchanges.klever-list-data-one {
+    width: 96% !important;
+}
+
+td.kleverlist-position.klever-list-data-mainchanges.klever-list-data-one input#settings_submit_button {
+    width: 100%;
+}
+
+td.klever-list-data-dropdown label {
+    font-weight: 500;
+}
+
+
+/* Mapping page */
+
+.klever-list-mapping-target-field tbody.kleverlist-data-mapping-bg {
+    background: white;
+    border-radius: 10px;
+    padding: 5px 15px 0;
+    display: table-caption;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.klever-list-mapping-target-field td.klever-list-data-mappinng-page-heading {
+    padding: 0;
+}
+
+th.klever-list-data-mapping-main-heading-title {
+    padding-top: 27px;
+}
+
+div#kleverlist_mapping_settings_content table.form-table.width-900 td h4 {
+    font-size: 1.1em;
+}
+
+table.form-table.kleverlist-choose-integration select#mapping_integration_type:active {
+    outline: none;
+}
+
+td.klever-list-data-mapping-extra-field h4 {
+    margin: 0;
+}
+
+.kleverlist-tooltip.kleverlist-tooltip-box span.dashicons.dashicons-editor-help {
+    font-size: 26px;
+}
+
+th.klever-list-data-heading-mapping {
+    padding-top: 36px;
+}
+
+tbody.klever-list-data-settings-page td {
+    padding-bottom: 0;
+}
+
+tbody.klever-list-data-settings-page {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.klever-list-data-settings-field-page {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 20px 0;
+}
+
+.klever-list-data-heading-load-list {
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+    font-size: inherit;
+}
+
+.klever-list-data-heading-load-list h1 {
+    font-weight: 500;
+}
+
+td.kleverlist-global-help-info {
+    position: relative;
+}
+
+td.kleverlist-global-help-info .kleverlist-tooltip.kleverlist-tooltip-box {
+    bottom: auto;
+    top: 19px;
+}
+
+.kleverlist-global-privacy-input input#kleverlist_global_privacy_input {
+    margin-top: 10px;
+    border-color: gray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.kleverlist-global-privacy-input.hide-input {
+    display: none;
+}
+
+.kleverlist-global-privacy-input.show-input {
+    display: block;
+}
+
+tbody.kleverlist-data-mapping-bg.kleverlist-margin {
+    margin-top: 2em;
+}
+
+tbody.kleverlist-data-mapping-bg.kleverlist-margin td.kleverlist-position.button-mapping {
+    /*margin-bottom: 0;*/
+    display: flex;
+    width: 100%;
+}
+
+tbody.kleverlist-data-mapping-bg.kleverlist-margin td.kleverlist-position.button-mapping .kleverlist-loader-outer-div {
+    position: unset !important;
+    margin-left: 15px !important;
+}
+
+tbody.kleverlist-data-mapping-bg.kleverlist-margin td.kleverlist-position.button-mapping .kleverlist-loader-outer-div div#loader {
+    margin: 0;
+}
+
+.kleverlist-mapping-page-heading.kleverlist-advanced {
+    margin-top: 2em;
+}
+
+.kleverlist-mapping-page-heading h2 {
+    margin-bottom: 0;
+}
+
+.kleverlist-mapping-page-heading p {
+    margin-top: 7px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+.kleverlist-tooltip.kleverlist-tooltip-box {
+    top: 17px;
+    bottom: auto;
+}
+
+.klever-list-data-generate p.klever-list-data-paragraph {
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.kleverlist-page-main-description{
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.kleverlist-icon-list {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.kleverlist-icon-list img {
+    width: 100%;
+}
+
+.kleverlist-main-div-integrate-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.kleverlist-main-div-integrate-icon h1 {
+    width: 70%;
+    padding: 0;
+}
+
+.notice.notice-warning {
+    margin-top: 10px;
+}
+
+/*Premium notice popup*/
+.kleverlist-premium-popup-wrapper .kleverlist-premium-popup-inner-wrapper {
+    position: fixed;
+    width: 600px;
+    height: 440px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.kleverlist-premium-popup-wrapper .kleverlist-premium-popup-image-popup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0 0em;
+}
+
+.kleverlist-premium-popup-wrapper .kleverlist-premium-popup-image-popup img {
+    width: 100px;
+}
+
+.kleverlist-premium-popup-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.kleverlist-premium-popup-content h2 {
+    font-size: 2.0em;
+    font-family: 'Roboto';
+}
+
+.kleverlist-premium-popup-content p {
+    font-size: 17px;
+    padding:0 20px;
+}
+
+.kleverlist-premium-popup-content p a {
+    color: red;
+    text-transform: capitalize;
+}
+
+.overlay-kleverlist {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.kleverlist-premium-btn {
+    text-align: right;
+    margin-top: 2.5em;
+    width: 90%;
+}
+
+.kleverlist-premium-btn a {
+    background: #fc8f0f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+}
+#kleverlist-notice-popup{
+    display: none;
+}
+.kleverlist-free-plan {
+    background: #e7e7e7 !important;
+    /*pointer-events: none;*/
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+tbody.kleverlist-premium-option {
+    margin: 0 -20px !important;
+    display: table-caption;
+    padding: 0 19px;
+    border-radius: 0;
+}
+
+tbody.kleverlist-premium-option tr {
+    display: -webkit-box;
+}
+
+tbody.kleverlist-free-option {
+    display: table-caption;
+}
+.pro-featured-icon {
+    position: absolute;
+    top:11px;
+    right: 5px;
+   }
+   tbody.kleverlist-premium-option th {
+    position: relative;
+    /* display: block; */
+}
+   .pro-featured-icon img {
+    width: 40px;
+}
+/*Premium notice popup*/
+
+/*Quick Start Page*/
+.kleverlist-admin-qs-section.kleverlist-admin-qs-section-squashed {
+    display: flex;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    line-height: 2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.kleverlist-qs-admin-column-20 {
+    padding-right: 20px;
+    width: auto;
+}
+
+.kleverlist-qs-admin-column>div[class*="-column-"] {
+    float: left !important;
+}
+
+.kleverlist-qs-admin-column-20 img {
+    width: 270px;
+}
+
+.kleverlist-qs-admin-column-80 {
+    padding-left: 20px;
+    width: calc(100% - 20px - 270px);
+}
+
+.kleverlist-qs-admin-column-80 h2 {
+    margin-bottom: -10px;
+    font-size: 24px;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.6;
+}
+
+.kleverlist-qs-admin-column-80 p {
+    font-size: 16px;
+}
+
+.kleverlist-qs-admin-column-80 ol{
+    margin-left: 1em;
+}
+
+.kleverlist-qs-admin-column-80 ol li {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.kleverlist-qs-admin-section-post-link {
+    padding: 10px 15px;
+    background-color: #FF7A3D;
+    color: #fff !important;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.kleverlist-qs-admin-section-post-link:hover {
+    background-color: #FF5100;
+}
+
+.kleverlist-qs-admin-column-80 .dashicons.dashicons-external, .kleverlist-qs-admin-column-80 .dashicons.dashicons-admin-links {
+    vertical-align: middle; 
+    margin-left: 5px;
+    line-height: 16px;
+}
+
+.kleverlist-quick-start-page.kleverlist-setting-page .kleverlist-page-main-description{ 
+    font-size: 14px;
+}
+/*Quick Start Page*/

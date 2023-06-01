@@ -8,24 +8,24 @@
 
 	function KleverListGlobalSettings()
 	{
-		console.log( kleverlist_object.ajax_url );
-		console.log( kleverlist_object.nonce );
-		const loader = document.getElementById('loader');
+		const loader = document.getElementById('global_loader');
 		const formInput =  "form#kleverlist_global_settings :input";
-		
-		let user_resubscribe = ( $("#kleverlist_user_resubscribe").prop('checked') == true ) ? '1' : '0';
-		let active_all_products = ( $("#klerverlist_active_all_products").prop('checked') == true ) ? '1' : '0';
 
-		let sendy_list_id = $('#global_list').val(),
-			domain_name = $( '#domain_name' ).val(),
-			responseClass = '.kleverlist-gloabal-response',
+		let user_resubscribe = ( $("#kleverlist_user_resubscribe").prop('checked') == true ) ? '1' : '0';
+		
+		let sendy_list_id = $('#global_list').val();
+		let	responseClass = '.kleverlist-gloabal-response';
+		let data = null;
+		
+		
+		if( kleverlist_object.is_kleverlist_premium !== 'yes' ){
 			data = {
 				'action': 'kleverlist_global_settings',
 				'global_nonce': kleverlist_object.nonce,
-				'sendy_list_id': sendy_list_id,				
+				'sendy_list_id': sendy_list_id,										
 				'user_resubscribe': user_resubscribe,				
-				'active_all_products': active_all_products,				
 			};
+		}		
 		
 		loader.classList.remove('hidden');
 		
@@ -70,4 +70,6 @@
 			}
 		});
 	}
+
+	
 })( jQuery );

@@ -18,7 +18,10 @@ class Kleverlist {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		$this->define_wc_hooks();
+		if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+			$this->define_wc_hooks();
+		}
+
 		$this->define_kleverlist_admin_ajax_hooks();
 		$this->define_public_hooks();
 

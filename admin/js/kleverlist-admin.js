@@ -146,7 +146,6 @@
 
 	}
 	/*** Generate List Code End ***/
-
 	
 	/*** Mapping Form Save Code Start ***/
 	$( document ).on( 'submit', '#kleverlist_mapping_settings', function( e ){
@@ -158,47 +157,20 @@
 		const loader = document.getElementById('loader');
 		const formInput =  "form#kleverlist_mapping_settings :input";
 		
-		let user_fullname = ( $("#mapping_user_fullname").prop('checked') == true ) ? '1' : '0';
-		let user_resubscribe = ( $("#mapping_user_resubscribe").prop('checked') == true ) ? '1' : '0';
-		
-		// Pro Featured Start	
-		let firstname = ( $("#mapping_user_firstname").prop('checked') == true ) ? '1' : '0';				
-		let lastname  = ( $("#mapping_user_lastname").prop('checked') == true ) ? '1' : '0';				
-		let username  = ( $("#mapping_user_username").prop('checked') == true ) ? '1' : '0';				
-		let companyname  = ( $("#mapping_user_company_name").prop('checked') == true ) ? '1' : '0';				
-		let country  = ( $("#mapping_user_country").prop('checked') == true ) ? '1' : '0';				
-		let address1  = ( $("#mapping_user_address_line_1").prop('checked') == true ) ? '1' : '0';				
-		let address2  = ( $("#mapping_user_address_line_2").prop('checked') == true ) ? '1' : '0';				
-		let town_city  = ( $("#mapping_user_town_city").prop('checked') == true ) ? '1' : '0';				
-		let county_district  = ( $("#mapping_user_province_county_district").prop('checked') == true ) ? '1' : '0';				
-		let postcode  = ( $("#mapping_user_postcode").prop('checked') == true ) ? '1' : '0';				
-		let phone  = ( $("#mapping_user_phone").prop('checked') == true ) ? '1' : '0';				
-		// Pro Featured End	
+		let user_fullname = ( $("#mapping_user_fullname").prop('checked') == true ) ? '1' : '0';		
 				
 		let mapping_user_email = ( $("#mapping_user_email").prop('checked') == true ) ? 'yes' : 'no';
-		let //mapping_list_id = $('#mapping_list').val(),
-			mapping_integration_type = $( '#mapping_integration_type' ).val(),
-			responseClass = '.kleverlist-response',
+		let responseClass = '.kleverlist-response';
+		let data = null;
+				
+		if( kleverlist_object.is_kleverlist_premium !== 'yes' ){
 			data = {
 				'action': 'kleverlist_mapping_settings',
 				'_nonce_': kleverlist_object.nonce,
-				//'mapping_list_id': mapping_list_id,
-				'mapping_integration_type': mapping_integration_type,
 				'mapping_user_email': mapping_user_email,
-				'mapping_user_fullname': user_fullname,
-				'mapping_user_resubscribe': user_resubscribe,
-				'mapping_user_firstname': firstname,
-				'mapping_user_lastname': lastname,
-				'mapping_user_username': username,
-				'mapping_user_company_name': companyname,
-				'mapping_user_country': country,
-				'mapping_user_address_line_1': address1,
-				'mapping_user_address_line_2': address2,
-				'mapping_user_town_city': town_city,
-				'mapping_user_province_county_district': county_district,
-				'mapping_user_postcode': postcode,
-				'mapping_user_phone': phone,
+				'mapping_user_fullname': user_fullname,				
 			};
+		}
 		
 		loader.classList.remove('hidden');
 				
@@ -273,10 +245,7 @@
 				success: function ( response ) {
 					if( response!='' ){
 						if( response.status ){			
-							loader.classList.add('hidden');
-							//remove_btn.disabled = false;				
-							//dropdownInput.disabled = false;				
-							//generate_list_btn.disabled = false;				
+							loader.classList.add('hidden');			
 							location.reload();
 						}
 					}
@@ -300,4 +269,17 @@
 		}
 	});
 	/*** Sendy Option Hide / Show Code End ***/
+
+	$(document).ready(function() {		
+		$( document ).on( 'click', '.kleverlist-premium-btn', function( e ){
+			e.preventDefault();
+			$('#kleverlist-notice-popup').fadeOut(500);
+		});	
+
+		$( document ).on( 'click', '.kleverlist-free-plan', function( e ){
+			e.preventDefault();			
+			$('#kleverlist-notice-popup').show();
+		});		
+	});
+
 })( jQuery );
